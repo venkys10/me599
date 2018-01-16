@@ -6,4 +6,4 @@ def close(a, b, c):
     else:
         print(False)
 
-close(1,2,3)
+close(1,2,0.5)
