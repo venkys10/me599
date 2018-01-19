@@ -18,4 +18,4 @@ def torus_vol(R, r):
 
 if __name__ == '__main__':
     print ('cylinder_volume = '),cylinder_volume(3,4)
-    print ('torus_volume = '),torus_vol(4,-3)
+    print ('torus_volume = '),torus_vol(4,3)
