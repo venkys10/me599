@@ -4,19 +4,18 @@ import math
 
 def cylinder_volume(r, h):
     if r>0 and h>0:
-        vol = math.pi*(r*r)*h
-        print(vol)
+        vol_c = math.pi*(r**2)*h
+        return vol_c
     else:
-        print(None)
-
-def torus_vol(r, R):
-    if r>0 and R>0:
-        vol = (math.pi*r*r)*(2*math.pi*R)
-        print(vol)
+        return None
+    
+def torus_volume(R, r):
+    if R>0 and r>0:
+        vol_t = (2*math.pi*R)*(math.pi*(r**2))
+        return vol_t
     else:
-        print(None)
-
+        return None
 
 if __name__ == '__main__':
-    print ('cylinder_volume = '),cylinder_volume(3,4)
-    print ('torus_volume  = '),torus_vol(3,4)
+    print "cylinder_volume = ",cylinder_volume(3,4)
+    print "torus_volume = ",torus_volume(4,3)

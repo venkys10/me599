@@ -2,8 +2,9 @@
 
 def close(a, b, c):
     if abs(a - b) < c:
-        print(True)
+        return True
     else:
-        print(False)
+        return False
 
-close(1,2,3)
+
+print close(1,2,0.5)
