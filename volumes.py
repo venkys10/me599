@@ -17,5 +17,5 @@ def torus_volume(R, r):
         return None
 
 if __name__ == '__main__':
-    print ('cylinder_volume = '),cylinder_volume(3,4)
-    print ('torus_volume = '),torus_volume(4,3)
+    print "cylinder_volume = ",cylinder_volume(3,4)
+    print "torus_volume = ",torus_volume(4,3)

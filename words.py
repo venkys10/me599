@@ -8,4 +8,5 @@ def letter_count(a,b):
             count = count+1
     return count
 
+
 print "The number of times letter repeats is ", letter_count('halLway', 'l')
