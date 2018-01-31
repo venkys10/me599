@@ -15,7 +15,7 @@ def sum_r(l):
     else:
         return l[0] + sum_r(l[1:])
 
+if __name__ == '__main__':
 
-
-print sum_i([6,2,3,4])
-print sum_r([1,2,3,4])
+    print sum_i([6,2,3,4])
+    print sum_r([1,2,3,4])

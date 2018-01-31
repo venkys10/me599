@@ -9,4 +9,5 @@ def gcd(a,b):
     else:
         return gcd(b, r)
 
-print gcd(20,8)
+if __name__ == '__main__':
+    print gcd(20,8)
