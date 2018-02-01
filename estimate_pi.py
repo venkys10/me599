@@ -24,5 +24,7 @@ def estimate_pi():
             k = k + 1
 
     return 1/sum_c
+if __name__ == '__main__':
 
-print estimate_pi()
+    print estimate_pi()
+    print math.pi
