@@ -18,8 +18,11 @@ def sum_ten(iter = 10000):
         list1.append(sum1)
 
     plt.hist(list1, bins = 100)
-    plt.xlabel('x')
-    plt.ylabel('y')
+    ax = plt.gca()
+    ax.set_xlim(0,10)
+    ax.set_ylim(0,500)
+    plt.xlabel('range of distribution')
+    plt.ylabel('values')
     plt.title('Histogram')
 
-#TODO: the x axis and y axis range
+#TODO: label

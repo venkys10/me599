@@ -16,7 +16,7 @@ def time_sum():
         elapsed_sum = (time.clock() - start)
         time_all1.append(elapsed_sum)
     #return time_all1
-    plt.title('Time_summation')
+    plt.title('Summation time')
     plt.xlabel('Time')
     plt.ylabel('Length of list')
     plt.plot(time_all1, l1)
@@ -31,7 +31,7 @@ def time_sort():
         elapsed_sort = (time.clock - start)
         time_all2.append(elapsed_sort)
     #return time_all2
-    plt.title('Time_sorting')
+    plt.title('Sorting time')
     plt.xlabel('Time')
     plt.ylabel('Length of list')
     plt.plot(time_all2, l2)

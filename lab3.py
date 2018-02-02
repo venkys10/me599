@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-from times import *
-from MassSpringDamper import *
+#from times import *
+#from MassSpringDamper import *
 from sum_iter import *
 from pyplot_basic import *
 
@@ -10,12 +10,11 @@ from pyplot_basic import *
 if __name__ == '__main__':
     #Question 2: Sin_curve
     sin_curve()
-    plt.show()
 
     # Question 3: Histogram
-    print sum_ten(1000)
+    sum_ten(10000)
     plt.show()
-
+'''
     # Question 4: displacement, time graph
     smd = MassSpringDamper(m = 10.0, k = 10.0, c = 1.0)
     state, t = smd.simulate(0.0, 1.0)
@@ -26,3 +25,4 @@ if __name__ == '__main__':
     plt.show()
     time_sort()
     plt.show()
+'''
