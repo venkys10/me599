@@ -1,27 +1,28 @@
 #!/usr/bin/env python
 
-import matplotlib.pyplot as plt
-import math
-import numpy as np
-import random
+from times import *
+from MassSpringDamper import *
+from sum_iter import *
+from pyplot_basic import *
 
-def sum_ten(iter = 10000):
-    sum1 = 0
-    list1 = []
+#TODO check 3, 4, 5
 
-    for j in range(iter):
-        list2 = []
-        for i in range(10):
-            s = np.random.uniform(0, 1)
-            list2.append(s)
-            sum1 = sum(list2)
-        list1.append(sum1)
-
-    plt.hist(list1, bins = 50)
-    plt.xlabel('x')
-    plt.ylabel('y')
-    plt.title('Histogram')
+if __name__ == '__main__':
+    #Question 2: Sin_curve
+    sin_curve()
     plt.show()
-    #return list1s
 
-print sum_ten(1000)
+    # Question 3: Histogram
+    print sum_ten(1000)
+    plt.show()
+
+    # Question 4: displacement, time graph
+    smd = MassSpringDamper(m = 10.0, k = 10.0, c = 1.0)
+    state, t = smd.simulate(0.0, 1.0)
+    plt.show()
+
+    # Question 5: times
+    time_sum()
+    plt.show()
+    time_sort()
+    plt.show()
