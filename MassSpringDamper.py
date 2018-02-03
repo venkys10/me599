@@ -34,11 +34,15 @@ class MassSpringDamper:
         x_dot_dot = -self.k / self.m * x - self.c / self.m * x_dot
         return [x_dot, x_dot_dot]
 
+def plot_msd():
     smd = MassSpringDamper(m=10.0, k=10.0, c=1.0)
     state, t = smd.simulate(0.0, 1.0)
+    axes = plt.gca()
+    axes.set_xlim([0, 100])
+    axes.set_ylim([-1.0, 1.0])
+    plt.yticks(np.arange(-1.0, 1.25, 0.25))
     plt.title('Displacement-time plot')
     plt.xlabel('Time')
     plt.ylabel('Displacement')
-    plt.plot(t, state[:,0])
-
-#TODO: not working in lab3
+    plt.plot(t, state[:, 0])
+    plt.show()
